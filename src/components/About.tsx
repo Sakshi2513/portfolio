@@ -73,23 +73,23 @@ export function About() {
             </div>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-              <strong className="text-gray-900 dark:text-white font-semibold">Hi, I'm Sakshi Sheogekar,</strong> a final-year Computer Science (Data Science) student driven by a passion for building intelligent technologies that make a meaningful impact.
+              <strong className="text-gray-900 dark:text-white font-semibold">Hi, I'm Sakshi Sheogekar,</strong> a final-year Computer Science (Data Science) student passionate about building intelligent technologies for meaningful impact.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-              I specialize in <strong className="text-gray-900 dark:text-white font-medium">Artificial Intelligence, Machine Learning, Generative AI, LLMs, Agentic AI, NLP, and Data Science</strong>. I have a strong interest in developing end-to-end AI solutions that transform complex data into practical, scalable products. From predictive modeling and intelligent automation to LLM-powered applications, I enjoy turning challenging ideas into solutions that solve real-world problems.
+              I specialize in <strong className="text-gray-900 dark:text-white font-medium">AI, Machine Learning, Generative AI, LLMs, Agentic AI, NLP, and Data Science</strong>. I enjoy developing end-to-end solutions that turn complex data and challenging ideas into scalable, real-world products.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-              My journey has been shaped by hands-on innovation and continuous learning. As a <strong className="text-gray-900 dark:text-white font-medium">Smart India Hackathon (SIH) 2025 National Finalist</strong>, recognized by the Ministry of Mines, I designed and presented an AI-powered Rockfall Prediction System. Since then, I've built projects ranging from AI-powered analytics platforms to public grievance systems, gaining experience across the complete software development lifecycle.
+              Driven by hands-on innovation, I am a <strong className="text-gray-900 dark:text-white font-medium">Smart India Hackathon (SIH) 2025 National Finalist</strong>, having built an AI-powered Rockfall Prediction System. My experience spans full-cycle development, from predictive analytics to public grievance platforms.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-              Beyond technology, I believe great products are built through collaboration and leadership. As an <strong className="text-gray-900 dark:text-white font-medium">NCC Cadet, Promotional Lead at E-Cell IPS Academy, and Campus Ambassador at E-Cell IIT Bombay</strong>, I've learned to lead teams, communicate effectively, and thrive in fast-paced, collaborative environments.
+              Beyond tech, I value leadership and collaboration. As an <strong className="text-gray-900 dark:text-white font-medium">NCC Cadet, E-Cell Promotional Lead, and Campus Ambassador at IIT Bombay</strong>, I thrive in dynamic and team-driven environments.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-              I'm always exploring emerging AI technologies, experimenting with new ideas, and building solutions that create measurable value. My goal is simple: <strong className="text-gray-900 dark:text-white font-medium">to develop AI that doesn't just demonstrate intelligence—it delivers impact.</strong>
+              I constantly explore emerging technologies to build solutions with measurable value. My goal is simple: <strong className="text-gray-900 dark:text-white font-medium">to develop AI that doesn't just demonstrate intelligence—it delivers impact.</strong>
             </p>
 
           </div>
@@ -111,11 +111,11 @@ export function About() {
                   <span className="w-1.5 h-5 bg-gradient-to-b from-cyan-400 to-fuchsia-400 rounded-sm mr-3 group-hover:h-6 transition-all"></span>
                   {category.title}
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-between">
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-blue-50/50 dark:bg-blue-900/40 text-blue-800 dark:text-cyan-200 border border-blue-100 dark:border-cyan-700/50 rounded-lg backdrop-blur-sm hover:scale-105 transition-transform"
+                      className="flex-grow justify-center inline-flex items-center px-3 py-1.5 text-sm font-medium bg-blue-50/50 dark:bg-blue-900/40 text-blue-800 dark:text-cyan-200 border border-blue-100 dark:border-cyan-700/50 rounded-lg backdrop-blur-sm hover:scale-105 transition-transform text-center"
                     >
                       {skill}
                     </span>

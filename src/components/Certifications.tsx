@@ -34,7 +34,7 @@ const certifications = [
     title: "Technology Risk Frameworks",
     org: "EY (Forage, Mar 2026)",
     desc: "Learned core IT risk management, compliance policies, and audit procedures.",
-    image: null
+    image: "/assets/EY.jpg"
   }
 ];
 
