@@ -1,30 +1,22 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback } from "react";
 import { useTheme } from "next-themes";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import Particles, { ParticlesProvider } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
 export function BackgroundAnimation() {
   const { theme } = useTheme();
-  const [init, setInit] = useState(false);
 
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
+  const particlesInit = useCallback(async (engine: any) => {
+    await loadSlim(engine);
   }, []);
-
-  if (!init) {
-    return null;
-  }
 
   return (
     <div className="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
-      <Particles
-        id="tsparticles"
+      <ParticlesProvider init={particlesInit}>
+        <Particles
+          id="tsparticles"
         options={{
           background: {
             color: { value: "transparent" },
@@ -62,7 +54,7 @@ export function BackgroundAnimation() {
               straight: false,
             },
             number: {
-              density: { enable: true, area: 800 },
+              density: { enable: true, width: 1920, height: 1080 },
               value: 80,
             },
             opacity: {
@@ -76,7 +68,8 @@ export function BackgroundAnimation() {
           detectRetina: true,
         }}
         className="absolute inset-0"
-      />
+        />
+      </ParticlesProvider>
       {theme === "dark" || !theme ? (
         <>
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-cyan-900/10 blur-[120px] mix-blend-screen animate-blob"></div>
