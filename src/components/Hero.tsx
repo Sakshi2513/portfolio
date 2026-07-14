@@ -46,7 +46,7 @@ export function Hero() {
                 <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
               </a>
               <a
-                href="/assets/RESUME.pdf"
+                href="/assets/RESUME.pdf?v=2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-700 text-base font-medium rounded-lg text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
